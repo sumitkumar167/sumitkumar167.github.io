@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Kumar | Embedded Software Consultant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and specific colors */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0; /* Light background for light mode */
+            color: #333333; /* Dark text for contrast in light mode */
+        }
+        .bg-light-section { background-color: #ffffff; } /* White for section backgrounds */
+        .text-deep-blue { color: #0a4f94; } /* Deep blue for accents - remains the same */
+        .border-deep-blue { border-color: #0a4f94; } /* Deep blue border - remains the same */
+        .hover-electric-blue:hover { color: #60a5fa; } /* Electric blue for hover effects - remains the same */
+        .btn-primary {
+            background-color: #0a4f94; /* Deep blue button - remains the same */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #60a5fa; /* Electric blue on hover - remains the same */
+        }
+        input[type="text"], input[type="email"], textarea {
+            background-color: #fdfdfd; /* Lighter input background */
+            border: 1px solid #cccccc; /* Lighter border for inputs */
+            color: #333333; /* Dark text for inputs */
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            width: 100%;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            outline: none;
+            border-color: #60a5fa; /* Electric blue focus ring - remains the same */
+            box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased leading-normal">
+
+    <!-- Navigation Header -->
+    <header class="bg-light-section shadow-lg py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-deep-blue">Sumit Kumar</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#profile" class="text-gray-700 hover-electric-blue transition-colors duration-300">Profile</a></li>
+                    <li><a href="#expertise" class="text-gray-700 hover-electric-blue transition-colors duration-300">Expertise</a></li>
+                    <li><a href="#services" class="text-gray-700 hover-electric-blue transition-colors duration-300">Services</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover-electric-blue transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero/Profile Section -->
+        <section id="profile" class="py-16 bg-light-section text-center rounded-b-xl shadow-xl">
+            <div class="container mx-auto px-4">
+                <!-- Profile Image -->
+                <img src="IMG_2.jpeg" alt="Sumit Kumar" class="mx-auto rounded-full mb-6 border-4 border-deep-blue shadow-lg w-40 h-40 object-cover">
+
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-3">Sumit Kumar</h2>
+                <p class="text-xl text-deep-blue mb-4">Embedded Software Engineer | Automotive Domain Specialist</p>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                    Detail-oriented Embedded Software Engineer with over 5 years of experience building secure, reliable, and intelligent systems at the intersection of hardware and software. Specializing in low-level software for next-generation automotive devices, ensuring they are safer, smarter, and more connected. Pursuing M.S. in Computer Engineering at UT Dallas.
+                </p>
+
+                <!-- Education Section - Now as Cards -->
+                <div class="mt-8">
+                    <h3 class="text-2xl font-bold text-deep-blue mb-4">Education</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- RV College of Engineering Card -->
+                        <div class="bg-light-section rounded-lg shadow-md border border-gray-300 flex flex-col items-center p-6">
+                            <img src="rvcollegelogo.png.webp" onerror="this.onerror=null;this.src='https://placehold.co/60x60/0a4f94/ffffff?text=RVCE';" alt="RV College of Engineering Logo" class="rounded-lg border border-gray-300 shadow-md w-16 h-16 object-contain mb-4">
+                            <p class="text-lg text-gray-700 text-center font-semibold">B.E. in Electrical & Electronics Engineering</p>
+                            <p class="text-gray-500 text-center text-sm mt-1">RV College of Engineering</p>
+                        </div>
+                        <!-- UT Dallas Card -->
+                        <div class="bg-light-section rounded-lg shadow-md border border-gray-300 flex flex-col items-center p-6">
+                            <img src="utd.svg.png" onerror="this.onerror=null;this.src='https://placehold.co/60x60/0a4f94/ffffff?text=UTD';" alt="UT Dallas Logo" class="rounded-lg border border-gray-300 shadow-md w-16 h-16 object-contain mb-4">
+                            <p class="text-lg text-gray-700 text-center font-semibold">M.S. in Computer Engineering</p>
+                            <p class="text-gray-500 text-center text-sm mt-1">University of Texas at Dallas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <a href="https://www.linkedin.com/in/sumit-kumar-74ba915a/" target="_blank" class="inline-flex items-center text-gray-700 hover-electric-blue transition-colors duration-300">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="0" fill="currentColor"></circle>
+                        </svg>
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center text-deep-blue mb-10">My Core Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Expertise Card 1 -->
+                    <div class="bg-light-section p-8 rounded-lg shadow-xl border border-gray-300 hover:border-electric-blue transition-all duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Embedded Software Development</h3>
+                        <p class="text-gray-600">Deep proficiency in C, C++, and Python for real-time embedded systems, middleware, and application development.</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-3">
+                            <li>C++, Embedded C</li>
+                            <li>Linux, QNX RTOS</li>
+                            <li>Middleware Development</li>
+                        </ul>
+                    </div>
+                    <!-- Expertise Card 2 -->
+                    <div class="bg-light-section p-8 rounded-lg shadow-xl border border-gray-300 hover:border-electric-blue transition-all duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Automotive Software Architectures</h3>
+                        <p class="text-gray-600">Specialization in Classic and Adaptive AUTOSAR, including ARXML modelling, SOME/IP, and DoIP Ethernet communication.</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-3">
+                            <li>AUTOSAR (Classic & Adaptive)</li>
+                            <li>DoIP, SOME/IP</li>
+                            <li>ARXML Modelling</li>
+                        </ul>
+                    </div>
+                    <!-- Expertise Card 3 -->
+                    <div class="bg-light-section p-8 rounded-lg shadow-xl border border-gray-300 hover:border-electric-blue transition-all duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Firmware & Cybersecurity</h3>
+                        <p class="text-gray-600">Designing and implementing FOTA update mechanisms, secure boot processes, and robust diagnostic flashing security.</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-3">
+                            <li>FOTA (Firmware Over-The-Air)</li>
+                            <li>Secure Boot, Encryption</li>
+                            <li>ISO 26262 Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-light-section px-4 rounded-t-xl shadow-xl">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center text-deep-blue mb-10">My White Glove Consulting Services</h2>
+                <p class="max-w-3xl mx-auto text-center text-lg text-gray-700 mb-12">
+                    I offer highly specialized, discreet, and results-driven engagements tailored to your most complex automotive embedded challenges. Focus on short, high-impact consultations and problem-solving.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Service Card 1 -->
+                    <div class="p-8 border border-gray-300 rounded-lg shadow-lg flex items-start space-x-6 bg-light-section">
+                        <div class="flex-shrink-0 text-deep-blue">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Strategic Architecture & Design Review</h3>
+                            <p class="text-gray-600">Expert analysis and recommendations for your AUTOSAR, Linux, or custom embedded software architectures to ensure scalability, security, and performance.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="p-8 border border-gray-300 rounded-lg shadow-lg flex items-start space-x-6 bg-light-section">
+                        <div class="flex-shrink-0 text-deep-blue">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Code Optimization & Troubleshooting</h3>
+                            <p class="text-gray-600">Deep-dive into existing codebases (C, C++, Python) to identify bottlenecks, enhance efficiency, and resolve complex embedded issues, including hardware-software integration.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="p-8 border border-gray-300 rounded-lg shadow-lg flex items-start space-x-6 bg-light-section">
+                        <div class="flex-shrink-0 text-deep-blue">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">FOTA & Cybersecurity Implementation</h3>
+                            <p class="text-gray-600">Guidance on designing secure FOTA update mechanisms and strengthening cybersecurity architecture for diagnostic flashing processes, compliant with ISO 26262.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="p-8 border border-gray-300 rounded-lg shadow-lg flex items-start space-x-6 bg-light-section">
+                        <div class="flex-shrink-0 text-deep-blue">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bazel Build System Optimization</h3>
+                            <p class="text-gray-600">Specialized consultation on optimizing Bazel-based build systems for large, complex automotive software projects, improving efficiency and robustness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#contact" class="btn-primary">Book a Confidential 30-Minute Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4">
+            <div class="container mx-auto max-w-2xl">
+                <h2 class="text-3xl font-bold text-center text-deep-blue mb-10">Get in Touch</h2>
+                <p class="text-center text-lg text-gray-700 mb-8">
+                    Ready to discuss your embedded software challenges or explore collaboration opportunities? Please fill out the form below, and I'll get back to you promptly.
+                </p>
+                <!-- Contact form using Formspree to send to sumitblock@gmail.com -->
+                <form action="https://formspree.io/f/xldnwqqg" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g., FOTA Optimization Inquiry">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Describe your challenge or inquiry..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-section py-8 text-center text-gray-500 text-sm rounded-t-xl shadow-inner">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="currentYear"></span> Sumit Kumar. All rights reserved.</p>
+            <p class="mt-2">Specializing in Secure & Connected Automotive Embedded Systems.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year for the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
